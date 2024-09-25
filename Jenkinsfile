@@ -16,8 +16,8 @@ pipeline{
     }
     stage("copy file"){
       steps{
-        sh "cp -r /root/.jenkins/workspace/job1_master/index.html c1:/usr/local/apache2/htdocs"
+        sh "docker cp /root/.jenkins/workspace/job1_master/index.html c1:/usr/local/apache2/htdocs"
       }
     }
-    }
   }
+}
